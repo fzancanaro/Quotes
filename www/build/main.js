@@ -164,7 +164,7 @@ var FavoritesPage = (function () {
     };
     FavoritesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* Component */])({
-            selector: 'page-favorites',template:/*ion-inline-start:"/Users/fzancanaro/Downloads/Quotes/src/pages/favorites/favorites.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-buttons start>\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Favorite Quotes</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list>\n    <ion-item-sliding\n      *ngFor="let quote of quotes">\n      <ion-item\n        color="quoteBackground"\n        [ngClass]="{alt: isAltBackground()}"\n        (click)="onViewQuote(quote)">\n        <h2>{{ quote.person }}</h2>\n        <p>{{ quote.text }}</p>\n      </ion-item>\n      <ion-item-options>\n        <button\n          ion-button\n          color="danger"\n          (click)="onRemoveFromFavorites(quote)">\n          <ion-icon name="trash"></ion-icon>\n          Delete\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/fzancanaro/Downloads/Quotes/src/pages/favorites/favorites.html"*/
+            selector: 'page-favorites',template:/*ion-inline-start:"/Users/fzancanaro/Documents/GitHub/Quotes/src/pages/favorites/favorites.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-buttons start>\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Favorite Quotes</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list>\n    <ion-item-sliding\n      *ngFor="let quote of quotes">\n      <ion-item\n        color="quoteBackground"\n        [ngClass]="{alt: isAltBackground()}"\n        (click)="onViewQuote(quote)">\n        <h2>{{ quote.person }}</h2>\n        <p>{{ quote.text }}</p>\n      </ion-item>\n      <ion-item-options>\n        <button\n          ion-button\n          color="danger"\n          (click)="onRemoveFromFavorites(quote)">\n          <ion-icon name="trash"></ion-icon>\n          Delete\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/fzancanaro/Documents/GitHub/Quotes/src/pages/favorites/favorites.html"*/
         }), 
         __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_2__services_quotes__["a" /* QuotesService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */], __WEBPACK_IMPORTED_MODULE_4__services_settings__["a" /* SettingsService */]])
     ], FavoritesPage);
@@ -208,7 +208,7 @@ var QuotePage = (function () {
     };
     QuotePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* Component */])({
-            selector: 'page-quote',template:/*ion-inline-start:"/Users/fzancanaro/Downloads/Quotes/src/pages/quote/quote.html"*/'\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>{{ person }}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding text-center>\n  <ion-card>\n    <ion-card-content>\n      {{ text }}\n    </ion-card-content>\n    <ion-row>\n      <ion-col>\n        <button\n          ion-button\n          small\n          outline\n          color="danger"\n          (click)="onClose(true)">Unfavorite</button>\n      </ion-col>\n    </ion-row>\n  </ion-card>\n  <button ion-button color="danger" (click)="onClose()">Close</button>\n</ion-content>\n'/*ion-inline-end:"/Users/fzancanaro/Downloads/Quotes/src/pages/quote/quote.html"*/
+            selector: 'page-quote',template:/*ion-inline-start:"/Users/fzancanaro/Documents/GitHub/Quotes/src/pages/quote/quote.html"*/'\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>{{ person }}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding text-center>\n  <ion-card>\n    <ion-card-content>\n      {{ text }}\n    </ion-card-content>\n    <ion-row>\n      <ion-col>\n        <button\n          ion-button\n          small\n          outline\n          color="danger"\n          (click)="onClose(true)">Unfavorite</button>\n      </ion-col>\n    </ion-row>\n  </ion-card>\n  <button ion-button color="danger" (click)="onClose()">Close</button>\n</ion-content>\n'/*ion-inline-end:"/Users/fzancanaro/Documents/GitHub/Quotes/src/pages/quote/quote.html"*/
         }), 
         __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
     ], QuotePage);
@@ -247,7 +247,7 @@ var LibraryPage = (function () {
     };
     LibraryPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* Component */])({
-            selector: 'page-library',template:/*ion-inline-start:"/Users/fzancanaro/Downloads/Quotes/src/pages/library/library.html"*/'\n<ion-header>\n\n  <ion-navbar>\n    <ion-buttons start>\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Quotes Library</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <h3 text-center>Select your favorite Quote</h3>\n  <ion-list>\n    <button\n      ion-item\n      *ngFor="let quoteGroup of quoteCollection"\n      [navPush]="quotesPage"\n      [navParams]="quoteGroup">\n      <ion-icon [name]="quoteGroup.icon" item-left></ion-icon>\n      <h2>{{ quoteGroup.category | uppercase }}</h2>\n      <p>{{ quoteGroup.quotes.length }} Quotes</p>\n    </button>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/fzancanaro/Downloads/Quotes/src/pages/library/library.html"*/
+            selector: 'page-library',template:/*ion-inline-start:"/Users/fzancanaro/Documents/GitHub/Quotes/src/pages/library/library.html"*/'\n<ion-header>\n\n  <ion-navbar>\n    <ion-buttons start>\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Quotes Library</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <h3 text-center>Select your favorite Quote</h3>\n  <ion-list>\n    <button\n      ion-item\n      *ngFor="let quoteGroup of quoteCollection"\n      [navPush]="quotesPage"\n      [navParams]="quoteGroup">\n      <ion-icon [name]="quoteGroup.icon" item-left></ion-icon>\n      <h2>{{ quoteGroup.category | uppercase }}</h2>\n      <p>{{ quoteGroup.quotes.length }} Quotes</p>\n    </button>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/fzancanaro/Documents/GitHub/Quotes/src/pages/library/library.html"*/
         }), 
         __metadata('design:paramtypes', [])
     ], LibraryPage);
@@ -323,7 +323,7 @@ var QuotesPage = (function () {
     };
     QuotesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* Component */])({
-            selector: 'page-quotes',template:/*ion-inline-start:"/Users/fzancanaro/Downloads/Quotes/src/pages/quotes/quotes.html"*/'\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>{{ quoteGroup.category | uppercase }}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-card *ngFor="let quote of quoteGroup.quotes; let i = index">\n    <ion-card-header>\n      #{{ i + 1 }}\n    </ion-card-header>\n    <ion-card-content>\n      <p>{{ quote.text }}</p>\n      <p class="author">{{ quote.person }}</p>\n    </ion-card-content>\n    <ion-row>\n      <ion-col text-right>\n        <button\n          ion-button\n          clear\n          small\n          (click)="onAddToFavorites(quote)"\n          *ngIf="!isFavorite(quote)">Favorite</button>\n        <button\n          ion-button\n          clear\n          small\n          color="danger"\n          (click)="onRemoveFromFavorites(quote)"\n          *ngIf="isFavorite(quote)">Unfavorite</button>\n      </ion-col>\n    </ion-row>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/fzancanaro/Downloads/Quotes/src/pages/quotes/quotes.html"*/
+            selector: 'page-quotes',template:/*ion-inline-start:"/Users/fzancanaro/Documents/GitHub/Quotes/src/pages/quotes/quotes.html"*/'\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>{{ quoteGroup.category | uppercase }}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-card *ngFor="let quote of quoteGroup.quotes; let i = index">\n    <ion-card-header>\n      #{{ i + 1 }}\n    </ion-card-header>\n    <ion-card-content>\n      <p>{{ quote.text }}</p>\n      <p class="author">{{ quote.person }}</p>\n    </ion-card-content>\n    <ion-row>\n      <ion-col text-right>\n        <button\n          ion-button\n          clear\n          small\n          (click)="onAddToFavorites(quote)"\n          *ngIf="!isFavorite(quote)">Favorite</button>\n        <button\n          ion-button\n          clear\n          small\n          color="danger"\n          (click)="onRemoveFromFavorites(quote)"\n          *ngIf="isFavorite(quote)">Unfavorite</button>\n      </ion-col>\n    </ion-row>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/fzancanaro/Documents/GitHub/Quotes/src/pages/quotes/quotes.html"*/
         }), 
         __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2__services_quotes__["a" /* QuotesService */]])
     ], QuotesPage);
@@ -363,7 +363,7 @@ var SettingsPage = (function () {
     };
     SettingsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* Component */])({
-            selector: 'page-settings',template:/*ion-inline-start:"/Users/fzancanaro/Downloads/Quotes/src/pages/settings/settings.html"*/'\n<ion-header>\n\n  <ion-navbar>\n    <ion-buttons start>\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Settings</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-grid>\n    <ion-row>\n      <ion-col>\n        <ion-label>Alternative Background</ion-label>\n      </ion-col>\n      <ion-col>\n        <ion-toggle\n          (ionChange)="onToggle($event)"\n          [checked]="checkAltBackground()"></ion-toggle>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/fzancanaro/Downloads/Quotes/src/pages/settings/settings.html"*/
+            selector: 'page-settings',template:/*ion-inline-start:"/Users/fzancanaro/Documents/GitHub/Quotes/src/pages/settings/settings.html"*/'\n<ion-header>\n\n  <ion-navbar>\n    <ion-buttons start>\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Settings</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-grid>\n    <ion-row>\n      <ion-col>\n        <ion-label>Alternative Background</ion-label>\n      </ion-col>\n      <ion-col>\n        <ion-toggle\n          (ionChange)="onToggle($event)"\n          [checked]="checkAltBackground()"></ion-toggle>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/fzancanaro/Documents/GitHub/Quotes/src/pages/settings/settings.html"*/
         }), 
         __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_1__services_settings__["a" /* SettingsService */]])
     ], SettingsPage);
@@ -511,7 +511,7 @@ var MyApp = (function () {
         __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* Component */])({template:/*ion-inline-start:"/Users/fzancanaro/Downloads/Quotes/src/app/app.html"*/'<ion-menu [content]="nav">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n  <ion-content>\n    <ion-list>\n      <button ion-item (click)="onLoad(tabsPage)">\n        <ion-icon name="quote" item-left></ion-icon>\n        Quotes\n      </button>\n      <button ion-item (click)="onLoad(settingsPage)">\n        <ion-icon name="settings" item-left></ion-icon>\n        Settings\n      </button>\n    </ion-list>\n  </ion-content>\n</ion-menu>\n\n<ion-nav [root]="tabsPage" #nav></ion-nav>\n'/*ion-inline-end:"/Users/fzancanaro/Downloads/Quotes/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* Component */])({template:/*ion-inline-start:"/Users/fzancanaro/Documents/GitHub/Quotes/src/app/app.html"*/'<ion-menu [content]="nav">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n  <ion-content>\n    <ion-list>\n      <button ion-item (click)="onLoad(tabsPage)">\n        <ion-icon name="quote" item-left></ion-icon>\n        Quotes\n      </button>\n      <button ion-item (click)="onLoad(settingsPage)">\n        <ion-icon name="settings" item-left></ion-icon>\n        Settings\n      </button>\n    </ion-list>\n  </ion-content>\n</ion-menu>\n\n<ion-nav [root]="tabsPage" #nav></ion-nav>\n'/*ion-inline-end:"/Users/fzancanaro/Documents/GitHub/Quotes/src/app/app.html"*/
         }), 
         __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* MenuController */]])
     ], MyApp);
@@ -564,20 +564,20 @@ var MyApp = (function () {
         icon: 'bicycle'
     },
     {
-        category: 'enthusiasm',
+        category: 'philosophy',
         quotes: [
             {
                 id: '6',
-                person: 'Benjamin Disraeli',
-                text: 'Every product of genius must be the product of enthusiasm.'
+                person: 'Albert Einstein',
+                text: 'Two things are infinite: the universe and human stupidity; and I\'m not sure about the universe.'
             },
             {
                 id: '7',
-                person: 'Norman Vincent Peale',
-                text: 'Enthusiasm releases the drive to carry you over obstacles and adds significance to all you do.'
+                person: 'Mahatma Gandhi',
+                text: 'Be the change that you wish to see in the world.'
             }
         ],
-        icon: 'battery-charging'
+        icon: 'ion-android-bulb'
     },
     {
         category: 'motivational',
